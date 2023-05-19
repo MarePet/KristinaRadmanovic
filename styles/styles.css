@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body, html{
+    overflow-x: hidden;
+}
+
+/*1.korak*/
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/pocetna.JPG);
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header-content{
+    margin-bottom: 150px;
+    color:olivedrab;
+    text-align: center;
+}
+
+.header-content h2{
+    font: 4vmin;
+}
+
+.line{
+    width: 500px;
+    height: 4px;
+    background-color:darkolivegreen;
+    align-items: center;
+    border-radius: 5px;
+}
+.header-content h1{
+    font-size:5vmin;
+    margin-top:50px;
+    margin-bottom: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.ctn{
+    padding: 8px 15px;
+    background-color: darkolivegreen;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+/* 2.korak - NAVBAR */
+
+.navbar{
+    position: fixed !important;
+    top: 10;
+    left: 10;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: whitesmoke;
+    background-color: darkolivegreen;
+    opacity: 0.8;    
+}
+
+ul{
+    list-style: none;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li{
+    margin: 0 30px;
+
+}
+
+.nav-links li a{
+    color: whitesmoke
+}
+
+/* korak 2a - POSLEDNJI KORAK MENIJA*/
+
+.menu-btn{
+    display: none;
+}
+
+/* 2.korak - RESPONYIVNOST NA TELEFONU */
+@media only screen and (max-width:850px) {
+    .navbar{
+        position: absolute;
+        padding:0;
+        opacity:1;
+        background-color: transparent;
+    }
+    .logo{
+        position:absolute;
+        top: 30px;
+        left: 30px;
+        color:olivedrab;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: olivedrab;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links li{
+        margin: 30 px auto;
+    }
+}
+.row .title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.row .title h1{
+    text-align: center;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row .col{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+h4{
+    font-size: 3vmin;
+    color: rgb(57, 80, 19);
+    margin: 20px auto;
+}
+p{
+    padding: 0px 30px;
+    color:rgb(57, 80, 19);
+}
+.projects .ctn{
+    margin-top: 30px;
+}
+
+.content-col h1{
+    font-size: 5vmin !important;
+}
+
+.explore{
+    width: 100%;
+    height: 100%;
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    }
+.explore{
+    width: 100%;
+    height: 100%;
+    background-image: url(img/hodnik.JPG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+
+}
+.explore-content{
+    width: 80%;
+    padding: 50px;
+    color: darkolivegreen;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background-image: url(konsultacije.JPG);
+}
+.explore-content h1{
+    font-size: 5vmin;
+    }
+    .explore-content h1{
+        font-size: 5vmin;
+    }
+    .explore-content .line{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .explore-content p{
+        color:black;
+        width: 100%;
+        padding: 0px;
+        margin-top:40px;
+        }
+        .explore-content .ctn{
+            display:inline-block;
+            margin-top: 10px;
+        }
+        .explore-content .img{
+            width: 45%;
+            height: 35vmin;
+        }
+    /* O NAMA */
+    .content-col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+.content-col.line{
+    width: 40%;
+    }
+    .content-col .line{
+        margin-left: -1px;
+    }
+    .content-col p{
+        padding: 0px;
+        margin: 30px auto;
+    }
+   
+    .image-col{
+        width:30%;
+        margin-left: auto;
+    }
+    .about .image-col{
+        display:flex;
+        flex-wrap: wrap;
+        width: 60%;
+        justify-content: right;
+    }
+    .about .image-col img{
+        width: 38%;
+        height: 55vmin;
+        margin: 10px;
+        margin-left: auto;
+    }
+
+    .content-col h1{
+        font-size: 7vmin;
+    }
+
+.myForm{
+    width: 100%;
+    color: whitesmoke;
+    display: flex;
+    background-color: darkolivegreen;
+    border-radius: 3px;
+    padding: 1.8em;
+    justify-content: center;
+}
+.message{
+    flex:2;
+    display: flex;
+    flex-direction: column;
+    order: 2;
+}
+.message > textarea{
+flex: 1;
+min-width: 18em;
+width: 100%;
+}
+.contact{
+    flex: 1;
+    order: 1;
+    margin-right: 2em;
+    align-items: center;
+    flex-direction: column;
+}
+.contact h1{
+    font-size: 4vmin;
+    margin-bottom: 15px;
+}
+.contact input{
+    width: 100%;
+}
+.contact input,
+.contact button {
+    padding: 1em;
+    margin-bottom: 1em;
+}
+.contact button{
+    background: rgb(0, 0, 0);
+    color: whitesmoke;
+    border: 0;
+    }
+    .contact-data{
+        flex: 1;
+        order: 3;
+        margin: 20px 20px;
+        }
+        .contact-data h3{
+            margin: 20px 20px;
+        }

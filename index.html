@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RKARCHITECT</title>
+    
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">RKARCHITECT</h1>
+        <ul class="nav-links">
+            <li><a href="#">Početna</a></li>
+            <li><a href="#about us">O nama</a></li>
+            <li><a href="#projects">Projekti</a></li>
+            <li class="ctn"><a href="contacts">Kontakt</a></li>
+        </ul>
+        
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h2>Kreiraj dom po svojoj meri!</h2>
+            <div class="line"></div>
+            <h1>Realizovaćemo tvoje ideje i maštu!</h1>
+            <a href=""  class="ctn">Saznaj više</a>
+        </div>
+    </header>
+
+    <section class="projects" id="projects">
+        <div class="row">
+            <div class="title">
+                <h1>Pogledaj naše prethodne radove</h1>
+                <div class="line"></div>
+            </div>
+            <div class="col">
+                <img src="img/hodnik.JPG" alt="">
+                <h4>Estetika i funkcionalnost u jednom</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam exercitationem sit incidunt veritatis enim tempore?</p>
+                <a href="" class="ctn">Saznaj više!</a>
+            </div>
+            <div class="col">
+                <img src="img/spavaca soba.JPG" alt="">
+            <h4>Tvoj dom=tvoj omiljeni kutak</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio beatae velit, maiores enim recusandae rerum?</p>
+            <a href="" class="ctn">Saznaj vise!</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="explore">
+        <div class="explore-content">
+            <h1>Koji su noviteti na polju dizajna enterijera?</h1>
+            <div class="line"></div>
+            <p id="post-1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam laboriosam sapiente dolore explicabo odio debitis!</p>
+            <a href="#" class="ctn">Saznaj više!</a>
+            <p id="post-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti voluptate quos adipisci amet similique aliquam.</p>
+            <a href="#" class="ctn">Saznaj više!</a>
+        </div>
+        <div class="col image-col">
+            <img src="img/konsultacije.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col content-col">
+                <h1>Ko stoji iza imena RKARCHITECT?</h1>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis architecto consequuntur totam, mollitia deleniti excepturi qui necessitatibus ullam doloremque iusto?</p>
+                <a href="" class="ctn">Saznaj više!</a>
+        </div>
+                <div class="col image-col">
+                    <img src="img/Tim.jpeg" alt="">
+                </div>
+            </div>
+            <div class=""></div>
+        </div>
+    </section>
+
+<form class="myForm" id="contact">
+    <div class="message">
+        <label for="msg">Poruka</label>
+        <textarea id="msg"></textarea>
+    </div>
+    <div class="contact">
+        <h1>Prijavite se za konsultacije!</h1>
+        <label for="name">Ime</label>
+        <input type="text" id="name">
+
+        <label for="townborn">Prezime</label>
+        <input type="text" id="townbar">
+        
+        <label for="email">Email adresa</label>
+        <input type="email" id="email">
+
+        <button type="submit">Pošalji</button>
+    </div>
+    <div class="contact-data">
+        <h1>Naši podaci:</h1>
+        <h2>Broj telefona: +381 64 xxxxxxx</h2>
+        <h3>E-mail:rkarchitect@gmail.com</h3>
+    </div>
+</form>
+
+
+
+
+
+
+
+
+
+    <script>
+        const menuBtn=document.querySelector('.menu-btn')
+        const navlinks=document.querySelector('.nav-links')
+        menuBtn.addEventListener('click', ()=>{
+            navlinks.classList.toggle('mobile-menu')
+                })
+    </script>
+</body>
+</html>
